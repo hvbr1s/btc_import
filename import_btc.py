@@ -71,7 +71,7 @@ def call_fordefi_api(account_name, hd_path, coin_type, jwt_token):
     """
     url = "https://api.fordefi.com/api/v1/vaults"
     payload = {
-        "name": account_name,
+        "name": account_name + "_btc",
         "type": coin_type,
         "chain": "bitcoin_mainnet",
         "import_vault": {
