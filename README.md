@@ -14,5 +14,6 @@ source .venv/bin/activate
 ```bash
 uv run import_btc.py 
 ```
-___
+
+The script will output a `imported_vaults.csv` file with each vault's name, derivation path and corresponding Fordefi Vault ID.
 

@@ -114,6 +114,7 @@ def process_row(row, jwt_token):
 
     try:
         hd_path = clean_hd_path(hd_path_raw)
+        print(f"Now processing -> {hd_path}")
     except ValueError as e:
         return (False, f"Invalid HD Path for {account_name}: {hd_path_raw} - {e}", row, None)
 
