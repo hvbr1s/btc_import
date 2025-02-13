@@ -65,19 +65,19 @@ def clean_hd_path(hd_path):
 
 
 def call_fordefi_api(account_name, hd_path, coin_type, jwt_token):
-    print(f"Coin type -> {coin_type}")
     """
     Calls the Fordefi API to import a vault for the given coin type and derivation path.
     Returns a tuple (success_bool, message_string, vault_id).
     """
     url = "https://api.fordefi.com/api/v1/vaults"
     payload = {
-        "name": account_name + "_" + coin_type,
+        "name": account_name,
+        "type": coin_type,
+        "chain": "bitcoin_mainnet",
         "import_vault": {
             "default_address_derivation_path": hd_path,
             "default_address_name": "Default Address"
         },
-        "type": coin_type
     }
     headers = {"Authorization": f"Bearer {jwt_token}"}
 
