@@ -18,3 +18,4 @@ unsupported_paths.log
 uv.lock
 btc_accounts.csv
 import_btc_test.py
+imported_vaults.csv
