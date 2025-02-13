@@ -16,3 +16,4 @@ wheels/
 data_large.csv
 unsupported_paths.log
 uv.lock
+btc_accounts.csv
