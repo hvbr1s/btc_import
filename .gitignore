@@ -17,3 +17,4 @@ data_large.csv
 unsupported_paths.log
 uv.lock
 btc_accounts.csv
+import_btc_test.py
