@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.DS_Store
+
+# Virtual environments
+.venv
+.env
+
+# Dev bin
+/bin
+data_large.csv
+unsupported_paths.log
+uv.lock
